@@ -1,4 +1,4 @@
-html{
+html {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -6,8 +6,8 @@ html{
 
 /* ====================================== Header section============================*/
 
-.header-container{
-    width: 1440px;
+.header-container {
+    width: 1665px;
     height: 100px;
     display: flex;
     flex-flow: row nowrap;
@@ -15,26 +15,26 @@ html{
     margin: 10px 10px;
 }
 
-.logo img{
-width: 230px;
-height: 90px;
+.logo img {
+    width: 230px;
+    height: 90px;
 }
 
-.menu{
+.menu {
     flex: 0.5 1 200px;
     max-width: 960px;
     padding: 45px 20px;
 }
 
-.menu ul{
-    
+.menu ul {
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 70px;
 }
 
-.menu ul li{
+.menu ul li {
     display: flex;
 }
 
@@ -44,57 +44,62 @@ height: 90px;
     font-size: large;
 }
 
-.login{
+/* .menu li a:hover {
+    border-bottom:5px 71px;
+    border: #32615c;
+} */
+
+.login {
     margin-top: 59px;
 }
 
 .login button {
     margin: 0 30px;
-   
+
 }
 
-.cart{
-    width: ;
+.cart {
+
     margin-top: 50px;
 }
 
-#login-btn{
+#login-btn {
     background-color: none;
     border: none;
 }
 
-#login-btn a{
+#login-btn a {
     background-color: none;
     color: #32beb1;
     font-weight: 700;
     font-size: large;
 }
 
-#register{
-background-color: #32beb1;
-border: 1px solid #32beb1;
-border-radius: 5px;
-padding: 5px;
+#register {
+    background-color: #32beb1;
+    border: 1px solid #32beb1;
+    border-radius: 5px;
+    padding: 5px;
 }
 
-#register a{
+#register a {
     text-decoration: none;
     color: white;
     font-weight: 700;
     font-size: large;
 }
 
-/* ====================================== MAin section============================*/
+/* ====================================== Main section============================*/
+/*--------------"main-container----------------*/
 
-
-.main-container{
+.main-container {
     position: relative;
-    width: 1440px;
+    width: 1665px;
     height: 585px;
 
 }
 
-.main-container input{
+.main-container input {
     position: absolute;
     z-index: 2;
     border: 3px solid #32beb1;
@@ -115,13 +120,148 @@ padding: 5px;
     z-index: 2;
 }
 
-.main-container img{
+.main-container img {
     position: absolute;
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     z-index: 1;
 
 }
 
-.stars { color: gold; font-size: 32px; letter-spacing: 2px; }
+/*--------------"main-course----------------*/
+h1 {
+    color: #32615c;
+    font-size: xx-large;
+}
+
+.main-courses {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+    width: 1665px;
+    height: 555px;
+    border-bottom: 1px solid black;
+}
+
+.course {
+    margin-top: 36.5px;
+    width: 289px;
+    height: 482px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    border: 1px solid blue;
+}
+
+.course img {
+    width: 289px;
+    height: 210px;
+    object-fit: contain;
+}
+
+
+.info-course {
+    width: 276px;
+    height: 235px;
+    padding-left: 10px;
+
+}
+
+.info-course h4 {
+    color: #32beb1;
+    font-size: larger;
+}
+
+.course-time {
+    font-weight: 800;
+}
+
+.course-price {
+
+    color: #6a6a59;
+    font-weight: 700;
+}
+
+.info-course ul {
+    display: flex;
+    padding-left: 2px;
+}
+
+.info-course ul li {
+    display: flex;
+
+}
+
+.stars {
+    color: gold;
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+.course-price {
+    margin-top: 15px;
+}
+
+.info-course button {
+    margin-left: 73px;
+    padding: 15px;
+    background-color: white;
+    color: #32beb1;
+    border: 2px solid #32beb1;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/*--------------------------------instructors-container--------------------------------------*/
+
+.instructors-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+    width: 1665px;
+    height: 320px;
+}
+
+.instructor {
+    width: 220px;
+    height: 280px;
+    margin-top: 20px;
+}
+
+.instructors-container img {
+    width: 201px;
+    height: 190px;
+    border-radius: 100%;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.20);
+}
+
+.instructors-container h4 {
+    color: #32beb1;
+    font-size: x-large;
+    margin-top: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.instructors-container h5 {
+    color: rgb(88, 84, 84);
+    font-size: larger;
+    font-style: italic;
+    margin-bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+/*-----------------------------footer-container------------------------------------------------*/
+.footer-container {
+    background-color: #32615c;
+    border: 1px solid #32615c;
+    width: 1665px;
+    height: 214px;
+    
+}
