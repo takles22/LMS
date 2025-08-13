@@ -1,137 +1,205 @@
-html {
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+/* root selector is a top level selector for variable for cloros and shadow find out in youtube */
+:root{
+    --brand-dark: #184B4B;
+    --names:#868686; /*rate*/
+    --brand:#0E8585;
+    --starts:#DAC34A;
+    --bg:#ffffff;
+    --section: #f7fdfc;
+    --shadow: 0 8px 24px rgba(0,0,0,.12);
+ }
+
+* {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.container{
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 16px;
+}
+
+.btn{
+  display: inline-block;
+  font-weight: 700;
+  border-radius: 6px;
+  padding: 10px 14px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: .2s ease;
 }
 
 /* ====================================== Header section============================*/
+body{
+    background: var(--bg);
+    line-height: 1.45;
+}
+
+.site-header{
+    border-bottom: 1px solid var(--brand);
+    background: var(--bg);
+}
 
 .header-container {
-    width: 1665px;
-    height: 100px;
     display: flex;
+    align-items: center;
+    gap: 14px;
     flex-flow: row nowrap;
-    border-bottom: 1px solid #32beb1;
-    margin: 10px 10px;
+    
 }
-
+/*------------------left side----logo-----------------------------*/
 .logo img {
-    width: 230px;
-    height: 90px;
+  display: block;              
+  width: 180px;
+  height: auto;               
 }
-
+/*------------------center----Navigator-----------------------------*/
 .menu {
-    flex: 0.5 1 200px;
-    max-width: 960px;
-    padding: 45px 20px;
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: var(--bg);
+    border-bottom: 2px solid var(--bg);
+    padding: 6px;
+    margin: 20px;
 }
 
 .menu ul {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 70px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.menu ul li {
-    display: flex;
+.menu li {
+  position: relative;
+  margin: 0;
 }
 
-.menu li a {
-    text-decoration: none;
-    font-weight: 700;
-    font-size: large;
+.menu a {
+  display: block;
+  padding: 16px 24px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  border-radius: 4px;
 }
 
-/* .menu li a:hover {
-    border-bottom:5px 71px;
-    border: #32615c;
-} */
+.menu a:hover {
+  color: var(--brand);
+  background-color: var(--brand-dark);
+}
 
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--bg);
+  min-width: 180px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  z-index: 1000;
+  flex-direction: column;
+  padding: 8px 0;
+}
+
+.dropdown li {
+  margin: 0;
+  width: 100%;
+}
+
+.dropdown a {
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--names)
+  border-radius: 0;
+  transition: all 0.2s ease;
+}
+
+.dropdown a:hover {
+  background-color: var(--brand);
+  color: var(--bg);
+  padding-left: 24px;
+}
+
+
+.menu li:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.menu a.active {
+  color: var(--brand);
+  background-color: rgba(23, 140, 140, 0.1);
+}
+/*------------------right side----login&register-----------------------------*/
 .login {
-    margin-top: 59px;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
-.login button {
-    margin: 0 30px;
 
+.login-btn {
+    background: transparent;
+    color: var(--brand);
+    border: 1px solid transparent;
 }
 
-.cart {
-
-    margin-top: 50px;
+.login-btn:hover {
+    background: var(--brand-dark);
 }
 
-#login-btn {
-    background-color: none;
-    border: none;
+
+.register-btn {
+  background: var(--brand);
+  color: var(--bg);
+  border: 1px solid var(--brand);
 }
 
-#login-btn a {
-    background-color: none;
-    color: #32beb1;
-    font-weight: 700;
-    font-size: large;
+.register-btn:hover {
+    background: var(--brand-dark); 
+    border-color: var(--brand-dark);
 }
 
-#register {
-    background-color: #32beb1;
-    border: 1px solid #32beb1;
-    border-radius: 5px;
-    padding: 5px;
-}
-
-#register a {
-    text-decoration: none;
-    color: white;
-    font-weight: 700;
-    font-size: large;
+.cart img {
+    width: 18%;
+    height: auto;
+    display: block;
+    margin: 15px;
+    padding: 8px;
 }
 
 /* ====================================== Main section============================*/
 /*--------------"main-container----------------*/
 
-.main-container {
+.hero-section{
     position: relative;
-    width: 1665px;
-    height: 585px;
-
+    overflow: clip;
+    background: var(--section);
 }
-
-.main-container input {
-    position: absolute;
-    z-index: 2;
-    border: 3px solid #32beb1;
-    border-radius: 15px;
-    width: 911px;
-    height: 65px;
-    margin-left: 264.5px;
-    font-size: large;
-}
-
-.main-container h2 {
-    position: absolute;
-    z-index: 3;
-    color: #32beb1;
-    margin-left: 349px;
-    font-size: 2.5rem;
-    margin-top: 100px;
-    z-index: 2;
-}
-
-.main-container img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 1;
-
-}
+//////////////////////////
 
 /*--------------"main-course----------------*/
 h1 {
-    color: #32615c;
+    color: var(--brand-dark)
     font-size: xx-large;
 }
 
@@ -151,7 +219,7 @@ h1 {
     width: 289px;
     height: 482px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-    border: 1px solid blue;
+  
 }
 
 .course img {
@@ -261,7 +329,6 @@ h1 {
 .footer-container {
     background-color: #32615c;
     border: 1px solid #32615c;
-    width: 1665px;
     height: 214px;
     
 }

@@ -4,144 +4,155 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>masna3_tech</title>
+	<title>TAKLESED	</title>
 	<link rel="stylesheet" href="style/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
 
 <body>
-	<header>
-		<div class="header-container">
-			<div class="logo">
-				<img src="images/masna1-transparent.png" alt="masna_3 logo">
-			</div>
-		<nav class="menu">
-			<ul>
-				<li>
-					<a href="">Home</a>
-				</li>
+	<div class="body-container">
 
-				<li>
-					<a href="">About</a>
-				</li>
+<!--------Heaader------->		
+		<header class="site-header">
+			<div class="header-container container">
+				<a class="logo" href="#">
+					<img src="images/logo.png" alt="taklesed_logo">
+				</a>
+				
+				<nav class="menu">
+					<ul>
+						<li><a href="">Home</a></li>
 
-				<li>
-					<a href="home.html?#Courses">Courses</a>
-				</li>
+						<li><a href="">About</a></li>
 
-				<li>
-					<a href="home.html?#Tutors">Tutors</a>
-				</li>
-				<li>
-					<a href="">Contact</a>
-				</li>
-			</ul>
-		</nav>
-		<div class="login">
-			<button id="login-btn">
-				<a href="">Login</a>
-			</button>
-			<button id="register">
-				<a href="">Register</a>
-			</button>
-		</div>
-		<img class="cart" src="images/cart.png" alt="">
-	</header>
-	<main>
-		<div class="main-container">
-			
-			<input type="text" placeholder="Search for courses" id="search-bar">
-			<h2> Explore What Professionals Like You Are<br>Learning The Most</h2>
-			<img src="images/main-wallpaper.png" alt="wallpaper">
+						<li>
+							<a href="#Courses">Courses</a>
+							<ul class="dropdown">
+								<li><a href="#Courses">HTML CSS</a></li>
+								<li><a href="#Courses">Anglar</a></li>
+								<li><a href="#Courses">Full&minus;Stack</a></li>
+								<li><a href="#Courses">JavaScript</a></li>
+							</ul>
+						</li>
 
-		</div>
-		<h1 id="Courses">Popular Courses</h1>
-		<div class="main-courses">
-			<div class="course">
-				<img src="images/course1.png" alt="">
-				<div class="info-course">
-					<h4>ASP.net</h4>
-					<p class="course-time">Duration: 25 mins</p>
-					<p class="course-price">$15.00 <i style="color: rgb(184, 21, 21);">Discont 30%</i> </p>
-					<ul>
-						<li class="stars">★★★★★</li>
-						<li class="course-price">(59,521)</li>
+						<li><a href="#Tutors">Tutors</a></li>
+						<li><a href="#Contact">Contact</a></li>
 					</ul>
-					<button>Enroll Now</button>
-				</div>
+				</nav>
+
+				<div class="login">
+					<a class="btn login-btn" href="#Login">Login</a>
+					<a class="btn register-btn" href="#Register">Register</a>
+					<a class="btn cart" href=""><img  src="images/cart.svg" alt="cart"></a>
+				</div>	
 			</div>
-			<div class="course">
-				<img src="images/course2.png" alt="">
-				<div class="info-course">
-					<h4>Anglar</h4>
-					<p class="course-time">Duration: 25 mins</p>
-					<p class="course-price">$25.00 <i style="color: rgb(184, 21, 21);">Discont 30%</i> </p>
-					<ul>
-						<li class="stars">★★★★★</li>
-						<li class="course-price">(48,521)</li>
-					</ul>
-					<button>Enroll Now</button>
-				</div>
-			</div>
-			<div class="course">
-				<img src="images/course3.png" alt="">
-				<div class="info-course">
-					<h4>Fornt End</h4>
-					<p class="course-time">Duration: 25 mins</p>
-					<p class="course-price">$10.00 <i style="color: rgb(184, 21, 21);">Discont 30%</i> </p>
-					<ul>
-						<li class="stars">★★★★★</li>
-						<li class="course-price">(25,521)</li>
-					</ul>
-					<button>Enroll Now</button>
-				</div>
-			</div>
-			<div class="course">
-				<img src="images/course4.png" alt="">
-				<div class="info-course">
-					<h4>Fullter</h4>
-					<p class="course-time">Duration: 25 mins</p>
-					<p class="course-price">$25.00 <i style="color: rgb(184, 21, 21);">Discont 30%</i> </p>
-					<ul>
-						<li class="stars">★★★★★</li>
-						<li class="course-price">(58,521)</li>
-					</ul>
-					<button>Enroll Now</button>
-				</div>
-			</div>
-			
-		</div>
-		<h1 id="Tutors">Our Instructors</h1>
-		<div class="instructors-container">
-			<div class="instructor">
-				<img src="images/teach3.png" alt="">
-				<h5>UX/UI Design</h5>
-				<h4>Shifa Rabbah</h4>
-			</div>
-			<div class="instructor">
-				<img src="images/Ragad.png" alt="">
-				<h5>Full Stack</h5>
-				<h4>Ragad Alquran</h4>
-			</div>
-			<div class="instructor">
-				<img src="images/teach2.png" alt="">
-				<h5>UX/UI Design</h5>
-				<h4>Farah</h4>
-			</div>
-			<div class="instructor">
-				<img src="images/teach4.png" alt="">
-				<h5>Flutter Programmer</h5>
-				<h4>Mohamed Alsayed</h4>
-			</div>
-		</div>
+		</header>
 		
-	</main>
-	<footer>
-		<div class="footer-container">
-			<div class="footer-menu"></div>
-			<div class="footer-social"></div>
+<!--------Main------->			
+		<main>
+
+			<!--------Hero Section------->
+			<section class="hero-section">
+				<h1> Explore What Professionals Like You Are Learning The Most</h1>
+				<input type="text" placeholder="Search for courses" id="search-bar">
+				<img class="hero-bg" src="images/main-wallpaper.png" alt="wallpaper">
+			</section>
+
+			<!--------Popular Course------->
+			
+			<section class="courses-section">
+				<h2 class="courses-title" id="Courses">Popular Courses</h2>
+
+				<div class="cards">
+					<img src="images/htmlcss.webp" alt="HTML & CSS thumbnail">
+					<div class="card-body">
+						<h3>HTML & CSS</h3>
+						<p class="meta">Duration: 25 mins</p>
+						<p class="price">$15.00 <i style="color: rgb(184, 21, 21);">Discont 30%</i> </p>
+						<p>class="rating">★★★★★ <span>(59,521)</span></p>
+						<button class="btn btn-outline">Enroll Now</button>
+					</div>
+				</div>
+				<div class="cards">
+					<img src="images/angular.webp" alt="">
+					<div class="card-body">
+						<h3>Angular</h3>
+						<p class="meta"><strong>Duration:</strong> 25 mins</p>
+						<p class="price">$25.00 <i class="discount">Discount 30%</i></p>
+						<p class="rating" aria-label="4 out of 5 stars">★★★★☆ <span>(48,521)</span></p>
+						<button class="btn btn-outline">Enroll Now</button>
+					</div>
+				</div>
+				<div class="cards">
+					<img src="images/fullstack.webp" alt="">
+					<div class="card-body">
+						<h3>Full‑Stack</h3>
+						<p class="meta"><strong>Duration:</strong> 25 mins</p>
+						<p class="price">$10.00 <i class="discount">Discount 30%</i></p>
+						<p class="rating" aria-label="4 out of 5 stars">★★★★☆ <span>(25,521)</span></p>
+						<button class="btn btn-outline">Enroll Now</button>
+					</div>
+				</div>
+				<div class="cards">
+					<img src="images/js.webp" alt="">
+					<div class="card-body">
+						<h3>JavaScript</h3>
+						<p class="meta"><strong>Duration:</strong> 25 mins</p>
+						<p class="price">$25.00 <i class="discount">Discount 30%</i></p>
+						<p class="rating" aria-label="4 out of 5 stars">★★★★☆ <span>(58,521)</span></p>
+						<button class="btn btn-outline">Enroll Now</button>
+					</div>
+				</div>
+			</section>
+
+			<!-------- Instructorse------->
+
+			<section>
+				<h2 id="Tutors">Our Instructors</h2>
+				<div class="instructors-container">
+					<div class="instructor">
+						<img src="images/ins-ma-shirt.webp" alt="">
+						<h5>UX/UI Design</h5>
+						<h4>Eng.Ahmed Ali</h4>
+					</div>
+					<div class="instructor">
+						<img src="images/ins-fe-hjab.webp" alt="">
+						<h5>Full Stack</h5>
+						<h4>Eng.Noor Hassan</h4>
+					</div>
+					<div class="instructor">
+						<img src="images/ins-ma-jacket.webp" alt="">
+						<h5>UX/UI Design</h5>
+						<h4>Eng.Osman Saleh</h4>
+					</div>
+					<div class="instructor">
+						<img src="images/ins-fe-jacket.webp" alt="">
+						<h5>Flutter Programmer</h5>
+						<h4>Eng.Alia Ayman</h4>
+					</div>
+				</div>
+			</section>
+		</main>
+
+<!--------footer------->				
+		<footer class="site-footer">
+			<div class="footer-container container">
+				<div class="footer-menu">
+					<p>&copy; <span id="year"></span> TaklesED. Demo Website.</p>
+				</div>
+				<div class="footer-social">
+					<a href=""><img src="images/x_logo.png" alt=""></a>
+					<a href=""><img src="images/instagram_logo.png" alt=""></a>
+					<a href=""><img src="images/youtube_logo.png" alt=""></a>
+				</div>
+			</div>
+
+		</footer>
+	</div>
 
 
-		</div>
-	</footer>
+	<script>
+    //Set year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
-
 </html>
